@@ -33,6 +33,7 @@ console.log("isEmpty:", queue.length === 0); // true
 // 큐 크기 확인
 console.log("size:", queue.length); // 0
 
+// 시간 복잡도 향상 큐
 idx = 0;
 
 // 데이터 넣기 (enqueue)
