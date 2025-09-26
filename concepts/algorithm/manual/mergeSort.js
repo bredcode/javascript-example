@@ -42,7 +42,11 @@ class MergeSort {
      * [4] [3]과 [2] [1]이 merge함수를 타면 [3,4] [1,2]가 될것이고
      * [3,4]와 [1,2]가 merge함수를 타면 [1,2,3,4]기 될것이다.
      */
-    return this.merge(this.sort(left), this.sort(right));
+
+    const sortedLeft = this.sort(left);
+    const sortedRight = this.sort(right);
+
+    return this.merge(sortedLeft, sortedRight);
   }
 }
 
