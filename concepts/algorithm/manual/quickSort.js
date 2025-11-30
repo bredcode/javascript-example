@@ -12,7 +12,7 @@ class QuickSort {
     // 오른쪽 값이 pivot보다 작으면 pivot 왼쪽으로, 왼쪽 값이 pivot보다 크면 pivot 오른쪽으로
     while (left < right) {
       // 피벗값보다 right 값이 큰 경우에는 right가 왼쪽으로 이동
-      while (data[right] >= pivot && right > left) {
+      while (data[right] >= pivot && left < right) {
         right--;
       }
 
